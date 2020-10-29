@@ -64,6 +64,7 @@ const AddActivity = () => {
                             <label htmlFor="eventTitle">Event Title</label><br></br>
                             <input className="form-control" name="eventTitle" id="eventTitle" ref={register({ required: true })} />
                             {errors.name && <span className="error">Field is required</span>}
+                            <input className="form-control" name="eventDate" id="eventDate" type="date" ref={register({ required: true })}/>
                            
                             <label htmlFor="eventDescription">Event Description</label><br></br>
 
